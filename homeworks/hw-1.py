@@ -18,3 +18,14 @@ balance = balance +  (balance / 100 * 1)
 balance = balance + (balance / 100 * 2)
 
 print(round(balance, 2))
+
+
+#! Question number 2
+#Convert the number below into a string and write, in a sentence, how many digits it contains, e.g. “The number 34592934 has 8 digits”.
+
+#Note that your code should work for any number, that is, inside the print function, use the variable x instead of the actual number. The number 8 must be the result of your code and cannot be written manually.
+
+x = 34592934
+str_var = str(x)
+length = len(str_var)
+print("The number", str_var, "has", length, "digits")
