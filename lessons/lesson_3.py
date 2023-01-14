@@ -1,4 +1,4 @@
-# for loop is making events that can repeat many times as you want.
+# for loop is making events that can repeat many times as you want. Also time complexity is O(n).
 
 # In the example below it prints only integers.
 for i in [1, 2, 3, 4, 5]:
