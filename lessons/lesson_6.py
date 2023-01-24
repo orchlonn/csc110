@@ -1,34 +1,34 @@
 import turtle
 
 orchlon = turtle.Turtle()
-# orchlon.shape('turtle')
-# bg = turtle.Screen()
-# orchlon.penup()
-# orchlon.stamp()
+orchlon.shape('turtle')
+bg = turtle.Screen()
+orchlon.penup()
+orchlon.stamp()
 
-# bg.bgcolor('light green')
-# orchlon.color('blue')
+bg.bgcolor('light green')
+orchlon.color('blue')
 
-# orchlon.penup()
-# orchlon.forward(100)
-# orchlon.pendown()
-# orchlon.forward(10)
-# orchlon.penup()
-# orchlon.forward(15)
+orchlon.penup()
+orchlon.forward(100)
+orchlon.pendown()
+orchlon.forward(10)
+orchlon.penup()
+orchlon.forward(15)
 
 
-# for i in range(12):
-#     orchlon.penup()
-#     orchlon.forward(100)
-#     orchlon.pendown()
-#     orchlon.forward(10)
-#     orchlon.penup()
-#     orchlon.forward(15)
-#     orchlon.penup()
-#     orchlon.stamp()
-#     #orchlon.backward(115)
-#     orchlon.goto(0, 0)
-#     orchlon.left(360 / 12)
+for i in range(12):
+    orchlon.penup()
+    orchlon.forward(100)
+    orchlon.pendown()
+    orchlon.forward(10)
+    orchlon.penup()
+    orchlon.forward(15)
+    orchlon.penup()
+    orchlon.stamp()
+    #orchlon.backward(115)
+    orchlon.goto(0, 0)
+    orchlon.left(360 / 12)
 
 a = 100
 b = 50
