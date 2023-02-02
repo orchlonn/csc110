@@ -15,3 +15,17 @@ def e_to_x_series(x, n):
 ans = e_to_x_series(1, 6)
 print('X to e =',ans)
 
+
+import turtle
+leo = turtle.Turtle()
+
+leo.forward(30)
+for i in range(3):
+    leo.right(60)
+    leo.forward(100)
+    leo.right(120)
+    leo.forward(50)
+    leo.right(120)
+    leo.forward(100)
+    leo.right(60)
+    leo.forward(30)
