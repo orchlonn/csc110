@@ -127,7 +127,6 @@ def ONEsquare(t, sz):
 
 def main():
     t = turtle.Turtle()
-    
     size = 20
     for i in range(5):
         ONEsquare(t, size)
