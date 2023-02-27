@@ -50,20 +50,19 @@ correct_pin = "0000"
 # Initialize the number of attempts
 attempts = 0
 
-# Loop until the user enters the correct PIN or runs out of attempts
-# while attempts < 3:
-#     # Ask the user to enter their PIN
-#     pin = input("Enter your PIN: ")
-#     # Check if the PIN is correct
-#     if pin == correct_pin:
-#         print("Access granted.")
-#         break
-#     else:
-#         attempts += 1
-#         if attempts < 3:
-#             print("Incorrect PIN. Please try again.")
-#         else:
-#             print("Account locked.")
+while attempts < 3:
+    # Ask the user to enter their PIN
+    pin = input("Enter your PIN: ")
+    # Check if the PIN is correct
+    if pin == correct_pin:
+        print("Access granted.")
+        break
+    else:
+        attempts += 1
+        if attempts < 3:
+            print("Incorrect PIN. Please try again.")
+        else:
+            print("Account locked.")
             
             
 #! Question 4 
@@ -73,14 +72,33 @@ attempts = 0
 # Use math.e from the math module to compare your approximation.
 import math
 
-def approx_e():
-    approximation = 1
-    term = 1
-    n = 1
-    while abs(math.e - approximation) > 0.001:
-        term *= 1 / n
-        approximation += term
-        n += 1
-    return n
+# def approx_e():
+#     approximation = 1
+#     term = 1
+#     n = 1
+#     while abs(math.e - approximation) > 0.001:
+#         term *= 1 / n
+#         approximation += term
+#         n += 1
+#     return n
 
-print(approx_e())
+# print(approx_e())
+
+def seq3np1(n):
+    count = 0
+    while n != 1:
+        if n % 2 == 0:        
+            n = n // 2
+        else:                 
+            n = n * 3 + 1
+        count += 1
+    return count
+
+maxSoFar = 0
+for i in range(51):
+    result = seq3np1(i + 1)
+    if result > maxSoFar:
+        maxSoFar = result
+
+print("Longest sequence:", maxSoFar)
+
