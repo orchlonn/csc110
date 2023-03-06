@@ -14,5 +14,3 @@ def count_words_in(sentence):
             return word
 
 print(count_words_in("I love apple"))
-
-w 
